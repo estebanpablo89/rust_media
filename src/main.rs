@@ -104,14 +104,14 @@ fn main() {
 
     // println!("{:#?}", item);
 
-    // match catalog.get_by_index(9990) {
-    //     MightHaveAValue::ThereIsAValue(value) => {
-    //         println!("Item: {:#?}", value);
-    //     }
-    //     MightHaveAValue::NoValueAvailable => {
-    //         println!("No value here!");
-    //     }
-    // }
+    match catalog.get_by_index(9990) {
+        Some(value) => {
+            println!("Item: {:#?}", value);
+        }
+        None => {
+            println!("No value here!");
+        }
+    }
 
     if let Some(value) = catalog.get_by_index(0) {
         println!("Item in pattern match: {:#?}", value)
