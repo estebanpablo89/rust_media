@@ -100,7 +100,7 @@ fn main() {
     catalog.add(podcast);
     catalog.add(placeholder);
 
-    // let item = catalog.get_by_index(40);
+    let item = catalog.get_by_index(40);
 
     // println!("{:#?}", item);
 
